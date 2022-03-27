@@ -1,0 +1,13 @@
+html,
+body {
+  margin: 0;
+}
+
+#App {
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+#root {
+  background: #343435;
+}

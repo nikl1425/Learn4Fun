@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { useWindowSize } from "./helper/useWindowSize";
+import styles from "./style/app.module.scss";
+import { SideBar } from "./components/Sidebar";
+import {Route, Routes} from "react-router-dom";
+import {Home, About, ShowRoom, Courses} from "./routes/index";
+
+
+
+
 
 function App() {
+
+  const size  = useWindowSize();
+
+  let isOpen = size.width < 768? false : true;
+
+  const [navOpen, setNavOpen] = useState(isOpen)
+
+  const sideBarChange = () => {
+    setNavOpen(value => !value)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="App">
+      <div>
+          <SideBar isMenuOpenCallBack={sideBarChange} navOpen={ navOpen } isOpen={ isOpen }/>
+        <div className={navOpen ? styles.nav_active : styles.nav}>
+          <div className={styles.container_fluid}>
+            <Routes>
+              <Route path="/" element={ <Home /> }></Route>
+              <Route path="/courses" element={ <Courses/> }></Route>
+              <Route path="/showroom" element={ <ShowRoom/> }></Route>
+              <Route path="/about" element={ <About/> }></Route>
+            </Routes>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
