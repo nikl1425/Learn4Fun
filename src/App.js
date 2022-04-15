@@ -26,13 +26,17 @@ function App() {
       <div>
           <SideBar isMenuOpenCallBack={sideBarChange} navOpen={ navOpen } isOpen={ isOpen }/>
         <div className={navOpen ? styles.nav_active : styles.nav}>
-          <div className={styles.container_fluid}>
-            <Routes>
-              <Route path="/" element={ <Home /> }></Route>
-              <Route path="/courses" element={ <Courses/> }></Route>
-              <Route path="/showroom" element={ <ShowRoom/> }></Route>
-              <Route path="/about" element={ <About/> }></Route>
-            </Routes>
+          <div className="container-fluid p-0">
+            <div className="row">
+              <div className="col">
+                <Routes>
+                <Route path="/" element={ <Home /> }></Route>
+                <Route path="/courses" element={ <Courses/> }></Route>
+                <Route path="/showroom" element={ <ShowRoom/> }></Route>
+                <Route path="/about" element={ <About/> }></Route>
+              </Routes>
+              </div>
+            </div>
           </div>
         </div>
       </div>

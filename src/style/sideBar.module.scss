@@ -4,6 +4,7 @@ $bm_icon_position_sidebar_close: 40px;
 $bm_icon_position_sidebar_open: 240px;
 
 @import "colors.scss";
+@import "breakpoins.scss";
 
 
 .bm_button {
@@ -19,6 +20,12 @@ $bm_icon_position_sidebar_open: 240px;
   svg {
     fill: $orange_font;
   }
+
+  @include sm {
+    top: 5px;
+    left: 5px;
+    
+  }
   
 }
 
@@ -32,6 +39,12 @@ $bm_icon_position_sidebar_open: 240px;
   top: 15px;
   z-index: 1000;
   transition: 0.5s;
+
+  @include sm {
+    top: 5px;
+    left: 5px;
+    z-index: 1000;
+  }
 }
 
 .side_bar_close :nth-child(1) { 
@@ -53,10 +66,16 @@ $bm_icon_position_sidebar_open: 240px;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+
+  @include sm{
+    width: 100%;
+    position: flex !important;
+  }
 }
 
 .side_bar_close {
   width: 0px;
+  position: fixed;
 }
 
 
@@ -75,7 +94,6 @@ $bm_icon_position_sidebar_open: 240px;
 .nav_link {
   display: block;
   color: $orange_font;
-  font-size: 1.5rem;
   text-decoration: none;
   transition: 1s;
   

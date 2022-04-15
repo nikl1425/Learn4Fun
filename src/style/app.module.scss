@@ -1,3 +1,6 @@
+@import "breakpoins.scss";
+
+
 body {
   background-color: #ffffff;
 }
@@ -6,16 +9,27 @@ body {
   width: 100%;
   margin-left: 0%;
   height: 100%;
-  position: fixed;
   transition: 500ms;
-
+  margin-top: 0%;
 }
 
 .nav_active {
-  width: 100%;
+  width: 80%;
   margin-left: 20%;
   height: 100%;
-  position: fixed;
   transition: 500ms;
+  margin-top: 0%;
+  margin-right: 20%;
+
+  @include sm {
+    width: 100%;
+
+  }
+
+  @include md {
+    width: 80%;
+  }
+
+
 }
 

@@ -1,24 +1,26 @@
 @import "colors.scss";
+@import "fonts.scss";
 
 
 .banner {
   width: 100%;
   background: $banner-background-color;
   background-image: $banner-background-image;
-
 }
 
 
 .text_container {
   height: auto;
-  position: relative;
   padding-top: 5%;
   padding-bottom: 5%;
   margin: 0 auto;
-  
+  width: 90%;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 
 .header_text {
-
+  font-family: $main_font;
+  color: $background;
 }
