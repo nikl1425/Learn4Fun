@@ -24,7 +24,19 @@ $bm_icon_position_sidebar_open: 240px;
   @include sm {
     top: 5px;
     left: 5px;
-    
+  }
+  @include md {
+    left: 180px;
+  }
+
+  @include lg {
+    left: 0px;
+    margin-left: 24%;
+  }
+
+  @include xl {
+    left: 0px;
+    margin-left: 15%;
   }
   
 }
@@ -38,7 +50,7 @@ $bm_icon_position_sidebar_open: 240px;
   left: $bm_icon_position_sidebar_close;
   top: 15px;
   z-index: 1000;
-  transition: 0.5s;
+  transition: 0.75s;
 
   @include sm {
     top: 5px;
@@ -49,7 +61,7 @@ $bm_icon_position_sidebar_open: 240px;
 
 .side_bar_close :nth-child(1) { 
   display: none; 
-  transition: 0.5s;
+  transition: 0.75s;
 }
 
 .bm_button:active {
@@ -71,6 +83,18 @@ $bm_icon_position_sidebar_open: 240px;
     width: 100%;
     position: flex !important;
   }
+
+  @include md{
+    width: 30%;
+  }
+
+  @include lg {
+    width: 30%;
+  }
+
+  @include xl {
+    width: 20%;
+  }
 }
 
 .side_bar_close {
@@ -88,6 +112,19 @@ $bm_icon_position_sidebar_open: 240px;
   ul{
     list-style-type: none;
     padding: 0;
+  }
+
+  @include sm {
+    margin-top: 5%;
+  }
+
+  @include md {
+    margin-top: 10%;
+  }
+
+  @include lg {
+    margin-top: 15%;
+
   }
 }
 
@@ -115,16 +152,44 @@ $bm_icon_position_sidebar_open: 240px;
 }
 
 .logo_container {
-  margin-left: 20%;
-  margin-right: 5%;
+  margin-right: 5px;
+  display: flex;
 }
 
 .company_logo {
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 10%;
   width: 60%;
+  margin: auto;
+
+  @include sm{
+    width: 60%;
+    margin-right: 10%;
+    margin-left: 13%;
+  }
 }
 
 
+.link_wrapper {
+  width: 80%;
+  display: flex;
+  margin-left: auto;
+}
 
+
+.link_font {
+  @include sm {
+    font-size: 5vw;
+  }
+
+  @include md {
+    font-size: 2.5vw;
+  }
+
+  @include lg {
+    font-size: 2.2vw;
+  }
+
+  @include xl {
+    font-size: 1.8vw;
+  }
+}

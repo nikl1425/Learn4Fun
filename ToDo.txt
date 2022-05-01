@@ -1,0 +1,9 @@
+- animation sidebar close
+- text sidebar resizing (DONE)
+- Home content layout
+- Course JSON skabelon (lav demo katalog) (DONE)
+- hent coding (kurser) billeder
+
+
+Home komponent:
+- Lav intro content: kræver basis container component.
