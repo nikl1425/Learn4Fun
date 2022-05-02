@@ -1,2 +1,33 @@
 @import "colors.scss";
+@import "fonts.scss";
 
+
+.font-main {
+  font-family: $main_font;
+  
+}
+
+.font_standard_size {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.font_color_main_gradient {
+  background: linear-gradient(
+    to top left, rgb(255, 0, 149), rgb(255, 145, 0)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.center_txt_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

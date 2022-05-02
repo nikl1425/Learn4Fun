@@ -3,7 +3,7 @@
 - Home content layout
 - Course JSON skabelon (lav demo katalog) (DONE)
 - hent coding (kurser) billeder
-
+- Txt container component
 
 Home komponent:
 - Lav intro content: kræver basis container component.

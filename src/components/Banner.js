@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "../style/header.module.scss";
+import fonts from "../style/fonts.scss";
 
 
-export const Header = (props) => {
+export const Banner = (props) => {
   return (
     <div className="center-block">
       <div className={styles.banner}>
