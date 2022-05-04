@@ -2,8 +2,16 @@
 - text sidebar resizing (DONE)
 - Home content layout
 - Course JSON skabelon (lav demo katalog) (DONE)
-- hent coding (kurser) billeder
-- Txt container component
+- hent coding (kurser) billeder (DONE)
+- Txt container component (DONE)
 
 Home komponent:
 - Lav intro content: kræver basis container component.
+- Youtube video component - hertil overskrift
+- Font color gradient på velkommen tekst
+- indhold (selve hjemmesiden)
+- Kort CV tekst under video
+- font style på kursus overskrifter i karosel
+
+Sidebar:
+- info boks med link til facebook/youtube + email kontakt

@@ -12,10 +12,12 @@ body {
   background: #343435;
 }
 
+
 html, body { 
   margin:0;
   padding:0;
   width:100%;
   height:100%;
   overflow: auto;
-  }
+  background: #343435 !important;
+}

@@ -4,29 +4,33 @@
       "id": "01",
       "name": "C#",
       "level": "beginner",
-      "short description": "Build by microsoft common used as backend language.",
-      "pattern": ""
+      "short_description": "Build by microsoft common used as backend language.",
+      "color": "blue",
+      "pattern": "Csharp"
     },
     {
       "id": "02",
       "name": "Python",
       "level": "beginner",
-      "short description": "Multi-purpose language used for datascience, backend and frontend logic.",
-      "pattern": ""
+      "short_description": "Multi-purpose language used for datascience, backend and frontend logic.",
+      "color": "green",
+      "pattern": "Python"
     },
     {
       "id": "03",
       "name": "JavaScript",
       "level": "beginner",
-      "short description": "Commonly used for building client logic.",
-      "pattern": ""
+      "short_description": "Commonly used for building client logic.",
+      "color": "yellow",
+      "pattern": "JavaScript"
     },
     {
       "id": "04",
       "name": "SQL",
       "level": "beginner - intermedate",
-      "short description": "Language for creating and managing databases.",
-      "pattern": ""
+      "short_description": "Language for creating and managing databases.",
+      "color": "grey",
+      "pattern": "SQL"
     }
   ]
 }
