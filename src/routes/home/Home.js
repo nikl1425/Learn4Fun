@@ -7,9 +7,14 @@ import { MultiCarousel } from '../../components/MultiCarousel';
 import { CourseThumpNail } from '../../components/CourseThumpNail';
 import {CourseData, RetrieveCourseToList} from '../../helper/JsonPasser';
 import { VideoContainer } from 'components/VideoContainer';
+import { MenuItem } from 'components/MenuItem';
+import { Principles } from 'assets/information/Principles';
 
 export const Home = () => {
   const Courses = RetrieveCourseToList(CourseData);
+
+
+
   return(
     <div className="container-fluid p-0">
           <div className="row">
@@ -86,9 +91,20 @@ export const Home = () => {
               </div>
               <div className="">
                 <div className="mx-4 py-4">
-                  <TextContainer background_color="black" border_color="2px solid orange">
-                    <VideoContainer embedId=""/>
-                  </TextContainer>
+                  
+                    
+                      {Principles.map((element) => {
+                        return (
+                          <TextContainer background_color="black" border_color="2px solid orange">
+                            <ul className="my-4">
+                            <MenuItem item={element}/>
+                            </ul>
+                          </TextContainer>
+                        )})
+
+                        }
+                    
+                  
                 </div>
               </div>
             </div>
