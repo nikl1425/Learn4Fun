@@ -1,0 +1,30 @@
+@import "breakpoins.scss";
+
+.big_vod {
+  
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+
+  @include sm {
+    width: 240;
+    height: 200px;
+
+  }
+
+  @include md {
+    width: 400px;
+    height: 480px;
+  }
+
+  @include lg {
+    width: 600px;
+    height: 380px;
+  }
+
+  @include xl {
+    width: 853px;
+    height: 480px;
+  }
+}
