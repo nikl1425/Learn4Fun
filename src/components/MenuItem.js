@@ -1,16 +1,28 @@
+import React, { useState } from "react";
 
 
+export const MenuItem = ({ item: { title, items = []} }) => {
+  let defaultShowSub = false;
+  const [showSub, setSub] = useState(defaultShowSub); 
+  console.log(showSub)
+  const onclickHandler = () => {
+    setSub(defaultShowSub => !defaultShowSub)
+  }
 
-export const MenuItem = ({ item: { title, items = [], href } }) => {
   return (
       <li>
-      <div className='menu-item-title'>{title}</div>
+      <div onClick={onclickHandler} className='menu-item-title'>{title}</div>
       
-      { items.length && (
+      
+      if(defaultShowSub){
         <ul className='submenu'>
-          { items.map( item => <MenuItem key={item.title} item={item} /> ) }
+        { items.map( item => 
+        <MenuItem key={item.title} item={item} /> 
+        )}
         </ul>
-      )}
+      }
+       
+      
     </li>
   ) 
 }

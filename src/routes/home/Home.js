@@ -92,17 +92,16 @@ export const Home = () => {
               <div className="">
                 <div className="mx-4 py-4">
                   
-                    
+                <TextContainer background_color="black" border_color="2px solid orange">
                       {Principles.map((element) => {
                         return (
-                          <TextContainer background_color="black" border_color="2px solid orange">
                             <ul className="my-4">
                             <MenuItem item={element}/>
                             </ul>
-                          </TextContainer>
                         )})
 
                         }
+                        </TextContainer>
                     
                   
                 </div>
