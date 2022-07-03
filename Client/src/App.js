@@ -6,9 +6,6 @@ import {Route, Routes} from "react-router-dom";
 import {Home, About, ShowRoom, Courses} from "./routes/index";
 
 
-
-
-
 function App() {
 
   const size  = useWindowSize();

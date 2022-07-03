@@ -106,7 +106,7 @@ $bm_icon_position_sidebar_open: 240px;
 .link_container {
   display: inline-block;
   text-align: left;
-  margin-top: 20%;
+  margin-top: 30%;
   width: 100%;
 
   ul{
@@ -136,13 +136,15 @@ $bm_icon_position_sidebar_open: 240px;
   
 
   li{
-    display: flex;
     background-color: $black;
     width: 100%;
-    height: 60px;
-    vertical-align: middle;
+    border: 1px;
+    padding-top: 10%;
+    padding-bottom: 10%;
     align-items: center;
     transition: 1s;
+    text-align: center;
+    
   }
 
   li:hover {
@@ -157,7 +159,7 @@ $bm_icon_position_sidebar_open: 240px;
 }
 
 .company_logo {
-  margin-top: 10%;
+  margin-top: 20%;
   width: 60%;
   margin: auto;
 
@@ -190,6 +192,7 @@ $bm_icon_position_sidebar_open: 240px;
   }
 
   @include xl {
-    font-size: 1.8vw;
+    font-size: 1.5vw;
+    
   }
 }
