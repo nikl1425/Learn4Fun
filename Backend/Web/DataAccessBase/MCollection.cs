@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace MongoBase
 {
-    public class MCollection
+    [AttributeUsage(AttributeTargets.Class, Inherited = false)]
+    public class MCollection : Attribute
     {
+        public string CollectionName { get; }
+
+        public MCollection(string collectionName)
+        {
+            CollectionName = collectionName;
+        }
     }
 }
