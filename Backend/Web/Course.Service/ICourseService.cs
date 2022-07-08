@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace BLL.Course.Service
 {
-    public class Settings
+    public interface ICourseService
     {
-        public string DatabaseName { get; set; }
-        public string ConnectionString { get; set; }
+        public string GetTitle();
     }
 }

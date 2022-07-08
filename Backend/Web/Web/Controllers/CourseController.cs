@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Web.options;
-using Services;
+using BLL.Course.Service;
 using Microsoft.Extensions.Options;
 
 namespace Web.Controllers

@@ -10,6 +10,6 @@ namespace MongoBase
     {
         IQueryable<TDocument> AsQueryable();
 
-        
+        TDocument FindById(string id);
     }
 }

@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace CourseService.Model
 {
-    public class CourseDTO
+    
+    public class Course
     {
         public string Title { get; set; }
         public string Description { get; set; }

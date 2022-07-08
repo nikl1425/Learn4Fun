@@ -1,9 +1,8 @@
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.Configure<MongoBase.Settings>(builder.Configuration.GetSection("DatabaseSettings").GetSection("MongoDb"));
-builder.Services.AddScoped<Services.ICourseService, Services.CourseService>();
-
+builder.Services.Configure<BLL.Course.Service.Settings>(builder.Configuration.GetSection("DatabaseSettings").GetSection("MongoDb"));
+builder.Services.AddScoped<BLL.Course.Service.ICourseService, BLL.Course.Service.CourseService>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

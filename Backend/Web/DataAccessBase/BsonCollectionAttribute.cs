@@ -3,11 +3,11 @@
 namespace MongoBase
 {
     [AttributeUsage(AttributeTargets.Class, Inherited = false)]
-    public class MCollection : Attribute
+    public class BsonCollectionAttribute : Attribute
     {
         public string CollectionName { get; }
 
-        public MCollection(string collectionName)
+        public BsonCollectionAttribute(string collectionName)
         {
             CollectionName = collectionName;
         }

@@ -5,15 +5,9 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web", "Web\Web.csproj", "{F1754912-CAC1-4ED6-9D41-7C9B624C4683}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data.Access.Layer", "Data.Access.Layer", "{8E9E7F02-63DE-424B-A11C-DD73B0912437}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoBase", "DataAccessBase\MongoBase.csproj", "{0E5D6EE9-A167-4162-A0F9-463FB9596BC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoBase", "DataAccessBase\MongoBase.csproj", "{0E5D6EE9-A167-4162-A0F9-463FB9596BC9}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Course.Service", "Course.Service\Course.Service.csproj", "{A666FE11-B5D6-4DA7-95EA-38E6F09496F1}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business.Logic.Layer", "Business.Logic.Layer", "{16685319-960E-4BA7-8782-53EEB7C1D395}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{3BC54371-28C8-446A-A573-7426FD7B84D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLL.Course.Service", "Course.Service\BLL.Course.Service.csproj", "{A666FE11-B5D6-4DA7-95EA-38E6F09496F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,18 +27,9 @@ Global
 		{A666FE11-B5D6-4DA7-95EA-38E6F09496F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A666FE11-B5D6-4DA7-95EA-38E6F09496F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A666FE11-B5D6-4DA7-95EA-38E6F09496F1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3BC54371-28C8-446A-A573-7426FD7B84D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3BC54371-28C8-446A-A573-7426FD7B84D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3BC54371-28C8-446A-A573-7426FD7B84D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3BC54371-28C8-446A-A573-7426FD7B84D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{0E5D6EE9-A167-4162-A0F9-463FB9596BC9} = {8E9E7F02-63DE-424B-A11C-DD73B0912437}
-		{A666FE11-B5D6-4DA7-95EA-38E6F09496F1} = {8E9E7F02-63DE-424B-A11C-DD73B0912437}
-		{3BC54371-28C8-446A-A573-7426FD7B84D7} = {16685319-960E-4BA7-8782-53EEB7C1D395}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8204068E-0BEF-4ECA-8602-8559DD19FD98}
