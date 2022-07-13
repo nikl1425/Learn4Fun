@@ -13,8 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Course.Service\BLL.Course.Service.csproj" />
-    <ProjectReference Include="..\DataAccessBase\MongoBase.csproj" />
+    <ProjectReference Include="..\BLL.Course.Service\BLL.Course.Service.csproj" />
   </ItemGroup>
 
 </Project>

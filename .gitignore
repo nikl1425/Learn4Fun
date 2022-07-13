@@ -38,3 +38,12 @@ yarn-error.log*
 /.vs
 /Backend/Web/Course.Service/bin/Debug/net6.0
 /Backend/Web/Course.Service/obj
+/Web/obj/Release/net6.0
+/Web/obj
+/Web/bin/Debug/net6.0
+/Client/obj
+/Client/bin
+/BLL.Course.Service/bin/Debug/net6.0
+/BLL.Course.Service/obj
+/MongoBase/bin/Debug/net6.0
+/MongoBase/obj
